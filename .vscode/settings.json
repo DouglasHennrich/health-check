@@ -1,0 +1,22 @@
+{
+    "git.ignoreLimitWarning": true,
+    "eslint.workingDirectories": [
+        { "directory": "backoffice", "changeProcessCwd": true },
+        { "directory": "backoffice/pdf-chart-generator", "changeProcessCwd": true }
+    ],
+    "chat.tools.terminal.autoApprove": {
+        "/^gh issue list --label \"documentation\" --state open --limit 5 --json number,title,body 2>/dev/null \\| head -100 \\|\\| gh issue list --limit 3 --json number,title,labels --state all 2>/dev/null \\| head -60$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        ".specify/scripts/bash/": true,
+        ".specify/scripts/powershell/": true
+    },
+    "chat.promptFilesRecommendations": {
+        "speckit.constitution": true,
+        "speckit.specify": true,
+        "speckit.plan": true,
+        "speckit.tasks": true,
+        "speckit.implement": true
+    }
+}
