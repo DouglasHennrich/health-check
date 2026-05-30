@@ -52,6 +52,7 @@ Notes/TODO: The MCP generation was applied; follow-ups:
 
 - [x] T032 DECIDED: Use **TypeORM** as the ORM and migrations tooling for `packages/backend`. (Decision recorded: implement TypeORM + migrations in follow-up task T034.)
 - [ ] T034 Implement TypeORM and migrations setup in `packages/backend`: add TypeORM dependency, initial entity (example `Health` or placeholder), `ormconfig`/datasource, and migration scripts (files: `packages/backend/src/entities/`, `packages/backend/ormconfig.ts`, `packages/backend/package.json` scripts).
+- [x] T034 Implement TypeORM and migrations setup in `packages/backend`: add TypeORM dependency, initial entity (example `Health` or placeholder), `ormconfig`/datasource, and migration scripts (files: `packages/backend/src/entities/`, `packages/backend/ormconfig.ts`, `packages/backend/package.json` scripts). <!-- CREATED: base TypeORM DataSource at packages/backend/src/orm/datasource.ts (no migrations) -->
 
 - [x] T033 CLARIFIED: `@shared` (packages/shared) will contain RabbitMQ event contract types and schemas only (contracts for events/messages). Classes and runtime artifacts produced by the `nest-clean-blueprint` MCP belong to `packages/backend` only and must NOT be copied into `packages/shared`.
 - [ ] T033a Wire `@shared` as a workspace dependency in `packages/backend/package.json` and `packages/frontend/package.json` (use `workspace:*`) and verify TypeScript path mappings in `/tsconfig.base.json` (files: `packages/backend/package.json`, `packages/frontend/package.json`, `/tsconfig.base.json`).
