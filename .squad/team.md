@@ -12,6 +12,7 @@
 
 | Name | Role | Charter | Status |
 |------|------|---------|--------|
+| tasks-auditor | Tasks Auditor | .squad/agents/tasks-auditor/charter.md | active |
 
 ## Project Context
 

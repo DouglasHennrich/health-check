@@ -135,6 +135,13 @@ hooks:
     description: Auto-commit after task generation
     condition: null
   after_implement:
+  - extension: squad
+    command: speckit.squad.after-implement
+    enabled: true
+    optional: false
+    prompt: Implementation complete — run Tasks Auditor?
+    description: Run Speckit Tasks Audit (tasks-auditor) after implementation
+    condition: null
   - extension: git
     command: speckit.git.commit
     enabled: true

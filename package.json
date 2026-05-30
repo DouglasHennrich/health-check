@@ -1,0 +1,17 @@
+{
+  "name": "health-check-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:all": "pnpm -w -r --parallel run dev",
+    "build:all": "pnpm -w -r run build",
+    "test:all": "pnpm -w -r run test",
+    "dev:backend": "pnpm --filter backend dev",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "compose:up": "docker-compose up -d",
+    "compose:down": "docker-compose down"
+  }
+}
