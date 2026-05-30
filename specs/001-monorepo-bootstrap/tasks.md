@@ -134,7 +134,8 @@ Notes/TODO: The MCP generation was applied; follow-ups:
 ## Phase 7: Verification & Finalize
 
 - [ ] T029 [P] Run verification: `pnpm -w -r install`, `pnpm -w -r build`, `pnpm --filter frontend test` (commands are in README) (no file change)
-- [ ] T030 Commit all created files to `001-monorepo-bootstrap` branch and open PR (commands in README)
+ - [x] T029 [P] Run verification: `pnpm -w -r install`, `pnpm -w -r build`, `pnpm --filter frontend test` (commands are in README) (no file change) <!-- VERIFIED: ran install, builds, and frontend tests -->
+ - [x] T030 Commit all created files to `001-monorepo-bootstrap` branch and open PR (commands in README) <!-- VERIFIED: changes committed and PR created -->
 
 ---
 
