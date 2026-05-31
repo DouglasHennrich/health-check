@@ -1,0 +1,18 @@
+schema_version: '1.0'
+workflow:
+  id: run-squad-route
+  name: Run Squad Route
+  version: 1.0.0
+requires:
+  speckit_version: '>=0.8.11'
+  integrations:
+    any:
+    - copilot
+    - claude
+    - gemini
+steps:
+- id: route
+  command: speckit.squad.route
+  integration: copilot
+  input:
+    args: --update-tasks

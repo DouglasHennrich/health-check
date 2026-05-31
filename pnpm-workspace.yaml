@@ -1,6 +1,9 @@
 packages:
   - 'packages/*'
 allowBuilds:
+  '@bradygaster/squad-cli': true
   '@nestjs/core': true
   esbuild: true
   msgpackr-extract: true
+  node-pty: true
+  protobufjs: true

@@ -17,6 +17,11 @@ export default defineSquad({
         description: "Shared library owner (`@shared`) and DTOs",
       }),
       defineAgent({
+        name: "tasks-auditor",
+        description:
+          "Tasks Auditor (Speckit Tasks Audit) — verifies implementation against tasks.md",
+      }),
+      defineAgent({
         name: "scribe",
         description: "Documentation and history",
       }),
