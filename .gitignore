@@ -10,3 +10,11 @@ node_modules
 .squad/.scratch/
 # Squad: SubSquad activation file (local to this machine)
 .squad-workstream
+
+# Common additions for Node/TS monorepo
+.env*
+coverage/
+*.log
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,33 @@
+{
+  "run_id": "b30ffbe2",
+  "workflow_id": "run-squad-route",
+  "status": "failed",
+  "current_step_index": 0,
+  "current_step_id": "route",
+  "step_results": {
+    "route": {
+      "integration": "copilot",
+      "model": null,
+      "options": {},
+      "input": {
+        "args": "--update-tasks"
+      },
+      "output": {
+        "command": "speckit.squad.route",
+        "integration": "copilot",
+        "model": null,
+        "options": {},
+        "input": {
+          "args": "--update-tasks"
+        },
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "",
+        "dispatched": true
+      },
+      "status": "failed"
+    }
+  },
+  "created_at": "2026-05-30T16:30:04.471565+00:00",
+  "updated_at": "2026-05-30T16:30:09.894865+00:00"
+}

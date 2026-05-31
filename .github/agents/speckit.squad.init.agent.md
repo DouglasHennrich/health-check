@@ -63,10 +63,9 @@ $ARGUMENTS
    - `status: active`
 
    Write each agent as a `.squad/agents/{name}/charter.md` file following
-   Squad's format. Also generate or update `squad.config.ts` at the project
-   root using `@bradygaster/squad-sdk`'s `defineSquad()` (with `defineTeam()`,
-   `defineAgent()`, and `defineRouting()` sub-builders) covering all agents,
-   routing rules, and model tier settings from config.
+   Squad's format. Update `.squad/team.md` and `.squad/routing.md` to reflect
+   the current roster, routing rules, and model tier assignments. In
+   markdown-first mode, no root `squad.config.ts` file is required.
 
 7. **Generate routing rules** in `.squad/routing.md` that map task keywords
    and domain patterns to the agents created above. Examples:
@@ -229,7 +228,7 @@ $ARGUMENTS
         - frontend-engineer  (React/TypeScript — expert)
         - qa-engineer        (Testing/QA — proficient)
       Routing rules  : 6
-      Config         : squad.config.ts
+      Config         : markdown-first `.squad` artifacts
    
    Next steps:
      squad doctor          — verify your team

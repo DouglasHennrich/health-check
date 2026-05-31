@@ -6,9 +6,10 @@ How to decide who handles what.
 
 | Work Type | Route To | Examples |
 |-----------|----------|----------|
-| {domain 1} | {Name} | {example tasks} |
-| {domain 2} | {Name} | {example tasks} |
-| {domain 3} | {Name} | {example tasks} |
+| Backend | backend-engineer | scaffold NestJS, health endpoints, workers, DB integration |
+| Frontend | frontend-engineer | scaffold React app, vitest smoke tests, UI contracts |
+| Shared | shared-lib-engineer | `@shared` types, Zod schemas, utilities |
+| Tasks Audit | tasks-auditor | Speckit Tasks Audit ceremony — verify tasks.md outputs |
 | Code review | {Name} | Review PRs, check quality, suggest improvements |
 | Testing | {Name} | Write tests, find edge cases, verify fixes |
 | Scope & priorities | {Name} | What to build next, trade-offs, decisions |

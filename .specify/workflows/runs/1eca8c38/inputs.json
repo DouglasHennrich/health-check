@@ -1,0 +1,7 @@
+{
+  "inputs": {
+    "spec": "Bootstrap a health-check monorepo with a NestJS backend, Vite React frontend, and shared TypeScript package",
+    "integration": "copilot",
+    "scope": "full"
+  }
+}

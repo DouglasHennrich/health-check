@@ -1,0 +1,18 @@
+schema_version: '1.0'
+workflow:
+  id: run-squad-generate
+  name: Run Squad Generate
+  version: 1.0.0
+requires:
+  speckit_version: '>=0.8.11'
+  integrations:
+    any:
+    - copilot
+    - claude
+    - gemini
+steps:
+- id: generate
+  command: speckit.squad.generate
+  integration: copilot
+  input:
+    args: ''
